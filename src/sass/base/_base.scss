@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'LXGW';
+    src: url('/fonts/LXGWWenKai-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'LXGW';
+    box-sizing: border-box;
+}

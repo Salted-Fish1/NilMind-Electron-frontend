@@ -1,0 +1,35 @@
+@mixin Selectable {
+	& {
+		transition: all 0.1s;
+	}
+
+	&:hover {
+		transform: translateY(-0.2rem);
+		box-shadow: 0 0.2rem 1rem rgba($color: $color-black, $alpha: 0.1);
+		backdrop-filter: blur(1rem);
+	}
+
+	&:active,
+	&:focus {
+		transform: translateY(-0.1rem);
+		box-shadow: 0 0.1rem 0.5rem rgba($color: $color-black, $alpha: 0.1);
+		backdrop-filter: blur(1rem);
+	}
+}
+
+@mixin DarkWhenHover {
+	& {
+		transition: all 0.1s;
+		color: rgba($color: $color-black, $alpha: .4);
+	}
+
+	&:hover {
+		color: rgba($color: $color-black, $alpha: 1);
+		backdrop-filter: blur(1rem);
+	}
+
+	&:active,
+	&:focus {
+		backdrop-filter: blur(1rem);
+	}
+}
